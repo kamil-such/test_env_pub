@@ -14,6 +14,8 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "centos/atomic-host"
   config.vm.network "public_network", ip: "192.168.0.14", bridge: "Qualcomm QCA9377 802.11ac Wireless Adapter"
+  config.vm.define "Centos-Atomic-Host"
+  config.vm.hostname = "Centos-Atomic-Host"
   
 # default router
   config.vm.provision "shell",
